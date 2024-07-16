@@ -1,21 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mail;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void EscenaJuego()
     {
@@ -26,7 +20,11 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    
+
+    public void EscenaLogin()
+    {
+        SceneManager.LoadScene("SampleScene1");
+    }
 
 
 }
